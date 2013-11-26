@@ -7,8 +7,14 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
+	<parent>
+		<groupId>org.sonatype.oss</groupId>
+		<artifactId>oss-parent</artifactId>
+		<version>7</version>
+	</parent>
+
 	<name>wicket-components</name>
-	<url>http://maven.apache.org</url>
+	<url>https://code.google.com/p/wicket-components/</url>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -94,4 +100,9 @@
 			</plugin>
 		</plugins>
 	</build>
+	<scm>
+		<connection>scm:svn:http://wicket-components.googlecode.com/svn/trunk/</connection>
+		<developerConnection>scm:svn:https://wicket-components.googlecode.com/svn/trunk/</developerConnection>
+		<url>https://wicket-components.googlecode.com/svn/trunk/</url>
+	</scm>
 </project>
