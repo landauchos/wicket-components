@@ -45,7 +45,7 @@ public class BootstrapTabbedPanel<T extends ITab> extends Panel {
                     StringValue parameter = getPage().getPageParameters().get("tab");
                     if (parameter != null && !parameter.isEmpty()) {
                         for (T tab : tabs.getObject()) {
-                            if (tab.getTitle().getObject().equals(parameter.toString())) {
+                            if (tab.getTitle().getObject().equalsIgnoreCase(parameter.toString())) {
                                 return tab;
                             }
                         }
