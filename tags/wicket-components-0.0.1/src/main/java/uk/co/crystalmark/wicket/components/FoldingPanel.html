@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+<meta charset="utf-8" />
+<title>OpenBet Matches Panel</title>
+<link rel="stylesheet" href="style.css" type="text/css" media="screen" title="Stylesheet" />
+</head>
+<body>
+	<wicket:panel>
+		<div class="accordion" wicket:id="accordion">
+			<div class="accordion-group">
+				<div class="accordion-heading">
+					<a class="accordion-toggle" data-toggle="collapse" wicket:id="openclose" data-parent="#accordion" href="#collapseOne">
+						<button class="btn" wicket:id="title">Title</button>
+					</a>
+				</div>
+				<div wicket:id="colapsable" class="accordion-body collapse in">
+					<div class="accordion-inner">
+						<div wicket:id="body">The content to show or hide</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</wicket:panel>
+</body>
+</html>
