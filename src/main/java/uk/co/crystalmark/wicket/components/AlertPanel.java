@@ -9,11 +9,33 @@ import org.apache.wicket.markup.html.basic.MultiLineLabel;
 import org.apache.wicket.markup.html.panel.Panel;
 import org.apache.wicket.model.IModel;
 
+/**
+ * @author tims
+ * 
+ *         This is a simple implementation of the Bootstrap dismissible alert with two buttons.
+ * 
+ *         The content, and the button text are in models. There are two abstract methods for the button callbacks. The alert will be hidden when either of the buttons are clicked.
+ * 
+ *         The X at the top right of the alert will only hide the text and not call back to the java.
+ * 
+ * @see <a href="http://getbootstrap.com/2.3.2/javascript.html#alerts">Bootstrap Documentation</a>
+ * 
+ */
 public abstract class AlertPanel extends Panel {
     private static final long serialVersionUID = 1L;
 
     private boolean visible = false;
 
+    /**
+     * @param id
+     *            The wicket id
+     * @param text
+     *            The text to display when visible
+     * @param okLabelString
+     *            The Text to display on the OK button
+     * @param cancelLabelString
+     *            The Text to display on the cancel button
+     */
     public AlertPanel(final String id, final IModel<String> text, final IModel<String> okLabelString, final IModel<String> cancelLabelString) {
         super(id);
 
