@@ -3,7 +3,7 @@
 
 	<groupId>uk.co.crystalmark</groupId>
 	<artifactId>wicket-components</artifactId>
-	<version>0.0.2</version>
+	<version>0.0.3-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<parent>
@@ -135,8 +135,8 @@
 		</plugins>
 	</build>
 	<scm>
-		<connection>scm:svn:http://wicket-components.googlecode.com/svn/tags/wicket-components-0.0.2</connection>
-		<developerConnection>scm:svn:https://wicket-components.googlecode.com/svn/tags/wicket-components-0.0.2</developerConnection>
-		<url>https://wicket-components.googlecode.com/svn/tags/wicket-components-0.0.2</url>
+		<connection>scm:svn:http://wicket-components.googlecode.com/svn/trunk</connection>
+		<developerConnection>scm:svn:https://wicket-components.googlecode.com/svn/trunk</developerConnection>
+		<url>https://wicket-components.googlecode.com/svn/trunk</url>
 	</scm>
 </project>
