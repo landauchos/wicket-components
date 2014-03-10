@@ -3,8 +3,6 @@ package uk.co.crystalmark.wicket.pages;
 import org.apache.wicket.Component;
 import org.apache.wicket.ajax.AjaxRequestTarget;
 import org.apache.wicket.ajax.markup.html.AjaxLink;
-import org.apache.wicket.bootstrap.Bootstrap;
-import org.apache.wicket.markup.head.IHeaderResponse;
 import org.apache.wicket.markup.html.WebPage;
 import org.apache.wicket.request.mapper.parameter.PageParameters;
 
@@ -34,13 +32,6 @@ public abstract class DummyBootstrapPage extends WebPage {
 
     protected void onAjaxClick(AjaxRequestTarget target) {
         // override if neccessary
-    }
-
-    @Override
-    public void renderHead(final IHeaderResponse response) {
-        super.renderHead(response);
-
-        Bootstrap.renderHeadResponsive(response);
     }
 
     public abstract Component getTestComponent(String markupId);

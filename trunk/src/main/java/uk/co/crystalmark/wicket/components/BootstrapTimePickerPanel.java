@@ -2,7 +2,6 @@ package uk.co.crystalmark.wicket.components;
 
 import org.apache.wicket.Component;
 import org.apache.wicket.behavior.Behavior;
-import org.apache.wicket.bootstrap.Bootstrap;
 import org.apache.wicket.markup.head.CssHeaderItem;
 import org.apache.wicket.markup.head.IHeaderResponse;
 import org.apache.wicket.markup.head.JavaScriptHeaderItem;
@@ -69,8 +68,6 @@ public class BootstrapTimePickerPanel extends Panel implements IHeaderContributo
 
     @Override
     public void renderHead(final IHeaderResponse response) {
-
-        response.render(JavaScriptHeaderItem.forReference(Bootstrap.responsive()));
 
         response.render(CssHeaderItem.forReference(new CssResourceReference(BootstrapTimePickerPanel.class, "css/bootstrap-timepicker.css")));
         response.render(JavaScriptHeaderItem.forReference(new JavaScriptResourceReference(BootstrapTimePickerPanel.class, "js/bootstrap-timepicker.js")));
